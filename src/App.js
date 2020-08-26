@@ -6,6 +6,11 @@ import WelcomePage from './WelcomePage';
 import LogInPage from './LogInPage';
 import Try from './Try'
 import AuthContextProvider from './contexts/AuthContext';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Link
+} from "react-router-dom";
 
 
 
@@ -14,27 +19,28 @@ import AuthContextProvider from './contexts/AuthContext';
 function App() {
   <h1> do you SEE THIS?<h1>
   return (
+
     <>
-    
+
     <BrowserRouter>
     <DataBaseContextC>
 
 
 
-       
+
         <Route exact path='/'component={LogInPage}/>
         <Route path='/user'component={WelcomePage}/>
         <Route path='/try'component={Try}/>
-      
 
-  
+
+
 
 
     </DataBaseContextC>
     </BrowserRouter>
-    
+
     </>
-  
+
   )
 
 
