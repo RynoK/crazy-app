@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/crazy-app/static/css/main.a4d7dfd3.chunk.css",
+    "main.js": "/crazy-app/static/js/main.122cbc6b.chunk.js",
+    "main.js.map": "/crazy-app/static/js/main.122cbc6b.chunk.js.map",
+    "runtime-main.js": "/crazy-app/static/js/runtime-main.dc225a28.js",
+    "runtime-main.js.map": "/crazy-app/static/js/runtime-main.dc225a28.js.map",
+    "static/js/2.939c6194.chunk.js": "/crazy-app/static/js/2.939c6194.chunk.js",
+    "static/js/2.939c6194.chunk.js.map": "/crazy-app/static/js/2.939c6194.chunk.js.map",
+    "index.html": "/crazy-app/index.html",
+    "precache-manifest.06a572165eae1ad05eb4fb4220832b00.js": "/crazy-app/precache-manifest.06a572165eae1ad05eb4fb4220832b00.js",
+    "service-worker.js": "/crazy-app/service-worker.js",
+    "static/css/main.a4d7dfd3.chunk.css.map": "/crazy-app/static/css/main.a4d7dfd3.chunk.css.map",
+    "static/js/2.939c6194.chunk.js.LICENSE.txt": "/crazy-app/static/js/2.939c6194.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc225a28.js",
+    "static/js/2.939c6194.chunk.js",
+    "static/css/main.a4d7dfd3.chunk.css",
+    "static/js/main.122cbc6b.chunk.js"
+  ]
+}
