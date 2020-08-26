@@ -12,12 +12,13 @@ import AuthContextProvider from './contexts/AuthContext';
 
 
 function App() {
+  <h1> do you SEE THIS?<h1>
   return (
     <>
     
     <BrowserRouter>
     <DataBaseContextC>
-<h1> do you SEE THIS?<h1>
+
 
 
        
