@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {DataBaseContext} from './DataBaseContext';
 
-import {Link} from 'react-router-dom';
+
 import './Login.css'
 const heroku = 'https://crazyapp2020.herokuapp.com/auth';
 const serverLaptop = 'https://crazyapp2020.herokuapp.com/';
@@ -28,8 +28,7 @@ validUser:false
     componentDidMount() {
 		this._isMounted = true;
 		const M = window.M;
-		this.context.loginPageF('loser')
-
+	
 
 	}
 
@@ -70,9 +69,9 @@ validUser:false
 			  headers: {
 				'Accept': 'application/json',
 				'Content-Type': 'application/json'
-				
+
 			  },
-			  
+
 			  body: JSON.stringify({"username":this.state.userName,  "password":this.state.userPass})
 
 			});
@@ -126,15 +125,15 @@ return loginValidation;
 		(async () => {
 			const rawResponse = await fetch(serverLaptop+'login', {
 			  method: 'POST',
-			  
+
 			  headers: {
 				'Accept': 'application/json',
 				'Content-Type': 'application/json',
-				
-        
-				
-				
-			  }, 
+
+
+
+
+			  },
 			  body: JSON.stringify({"username":this.state.userName,  "password":this.state.userPass})
 
 			}).then((resp) =>{
@@ -180,7 +179,7 @@ resp.status==200?(this.setState({validUser:true})):(this.setState({validUser:fal
 
 
 render(){
-	const {loginPageF} = this.context;
+	//const {loginPageF} = this.context;
 
 
 
@@ -213,9 +212,7 @@ return(
 
 
 				<div class="form-field">
-				<Link to={{pathname:this.handleSubmit(),state:{user: this.state.userName, token:this.state.authToken, userName:this.state.userName, pass:this.state.userPass}}}>
-					<button class="btn-large waves-effect waves-dark"  onClick={ this.handleSubmit,this.getToken}>Login</button>
-					</Link>
+
 				</div><br></br>
 			</div>
 
