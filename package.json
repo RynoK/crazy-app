@@ -1,6 +1,6 @@
 {
-  "homepage":".",
-  "name": "my-app",
+  "homepage":"https://rynok.github.io/crazy-app/",
+  "name": "crazy-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
