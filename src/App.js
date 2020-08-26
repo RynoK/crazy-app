@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext } from 'react';
+import {BrowserRouter, Route} from 'react-router-dom'
+import OptionMenu from './optionMenu';
+import DataBaseContextC from './DataBaseContext';
+import WelcomePage from './WelcomePage';
+import LogInPage from './LogInPage';
+import Try from './Try'
+import AuthContextProvider from './contexts/AuthContext';
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    
+    <BrowserRouter>
+    <DataBaseContextC>
+
+
+
+       
+        <Route exact path='/'component={LogInPage}/>
+        <Route path='/user'component={WelcomePage}/>
+        <Route path='/try'component={Try}/>
+      
+
+  
+
+
+    </DataBaseContextC>
+    </BrowserRouter>
+    
+    </>
+  
+  )
+
+
 }
 
 export default App;
